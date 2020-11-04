@@ -10,6 +10,8 @@
 #include "NonRenderObject.h"
 #include "Character.h"
 #include "controls.h"
+#include "Test.h"
+
 
 int main()
 {
@@ -38,6 +40,7 @@ int main()
 	sphere->SetScale(glm::vec3(10.0f, 10.0f, 10.0f));
 	sphere->SetRotation(180.0f, glm::vec3(0.0f, 1.0f, 0.0f));
 
+	Test* test = new Test();
 	//green
 		Character* star1 = new Character(filemgr);
 		star1->SetPosition(glm::vec3(0.0f, -10.0f, 30.0f));

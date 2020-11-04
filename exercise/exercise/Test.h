@@ -1,11 +1,15 @@
 #ifndef TEST_H
 #define TEST_H
-#include "Object.h"
+#include "Renderer.h"
 
-class Test:public RenderObject
+class Test:public Renderer
 {
 public:
-	virtual void shutDown() override;
+	void Init();
+	void ShutDown();
+	void Update();
+	void Render();
+
 };
 
 #endif // !TEST_H
