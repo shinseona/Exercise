@@ -34,6 +34,7 @@ public:
 
 	void SetViewMatrix(glm::mat4 src_ViewMatrix) {ViewMatrix = src_ViewMatrix; }
 	void SetProjectionMatrix(glm::mat4 src_ViewMatrix) { ProjectionMatrix = src_ViewMatrix; }
+
 	GLFWwindow* GetWindow() const { return window; }
 
 public:
